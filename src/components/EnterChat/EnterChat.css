@@ -1,0 +1,35 @@
+.EnterChat--container {
+  align-items: center;
+  border: 1px solid #eaeaea;
+  box-shadow: 1px 1px 12px lightgrey;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  justify-content: center;
+  padding: 30px;
+  width: 70%;
+}
+
+.EnterChat--welcome-title {
+  font-size: 28px;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.EnterChat--input-container {
+  display: flex;
+}
+
+.EnterChat--input {
+  height: 20px;
+  margin: 0 10px;
+  padding: 0 4px;
+}
+
+.EnterChat--btn {
+  height: 24px;
+  background: none;
+  border: 0.5px solid lightgrey;
+  font-family: "Open Sans", sans-serif;
+  padding: 0 4px;
+}

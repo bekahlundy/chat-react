@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Chat renders enter chat component when there is no user 1`] = `
+<div
+  class="EnterChat--container"
+>
+  <div
+    class="EnterChat--welcome-title"
+  >
+    Welcome to the chat. Enter your name to join
+  </div>
+  <div
+    class="EnterChat--input-container"
+  >
+    <input
+      class="EnterChat--input"
+      data-testid="enter-chat-input"
+      placeholder="Enter name here"
+      type="text"
+      value=""
+    />
+    <button
+      class="EnterChat--btn"
+      data-testid="enter-chat-button"
+    >
+      Enter Chat
+    </button>
+  </div>
+</div>
+`;

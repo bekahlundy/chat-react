@@ -1,0 +1,17 @@
+.Messages--container {
+  height: 400px;
+  margin-bottom: 20px;
+  overflow-y: scroll;
+}
+
+.Messages-current-user-message-container {
+  text-align: right;
+}
+
+.Messages--author {
+  padding: 3px 10px;
+}
+
+.Messages--message {
+  display: inline-block;
+}

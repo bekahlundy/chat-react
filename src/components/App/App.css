@@ -1,0 +1,7 @@
+.App {
+  align-items: center;
+  display: flex;
+  font-family: 'Open Sans', sans-serif;
+  height: 700px;
+  justify-content: center;
+}

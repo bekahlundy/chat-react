@@ -1,0 +1,8 @@
+.CurrentUsers--title {
+  font-size: 12px;
+}
+
+.CurrentUsers--current-user {
+  background-color: #FFE8FC;
+  font-weight: bolder;
+}

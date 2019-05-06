@@ -1,0 +1,10 @@
+.AddMessage--container {
+  bottom: 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+.AddMessage--input {
+  width: 85%;
+}

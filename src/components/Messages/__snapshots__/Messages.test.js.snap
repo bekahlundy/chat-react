@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Messages renders 1`] = `
+<div
+  class="Messages-container"
+>
+  no messages...
+</div>
+`;
+
+exports[`Messages renders with messages 1`] = `
+<div
+  class="Messages--container"
+>
+  <div
+    class="Messages-message-container"
+  >
+    <div
+      class="Messages--author"
+    >
+      bekah
+      :
+       
+      <div
+        class="Messages--message"
+      >
+        Hello
+      </div>
+    </div>
+  </div>
+  <div
+    class="Messages-message-container"
+  >
+    <div
+      class="Messages--author"
+    >
+      A dog
+      :
+       
+      <div
+        class="Messages--message"
+      >
+        woof
+      </div>
+    </div>
+  </div>
+</div>
+`;

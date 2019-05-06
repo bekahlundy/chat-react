@@ -1,0 +1,34 @@
+.Chat--container {
+  border: 1px solid #eaeaea;
+  box-shadow: 1px 1px 12px lightgrey;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  padding: 30px;
+  width: 70%;
+}
+
+.Chat--header {
+  font-size: 42px;
+  padding-bottom: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.Chat--body {
+  border: 1px solid black;
+  display: flex;
+  height: 100%;
+}
+
+.Chat--current-users {
+  border: 1px solid black;
+  padding: 10px;
+  width: 20%;
+}
+
+.Chat--messages {
+  height: 420px;
+  position: relative;
+  width: 80%;
+}

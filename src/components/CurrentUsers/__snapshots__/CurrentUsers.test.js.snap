@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CurrentUsers renders current users when there is both a user and a users array 1`] = `
+<div
+  class="CurrentUsers--container"
+>
+  <div
+    class="CurrentUsers--title"
+  >
+    Current Users:
+  </div>
+  <div
+    class="CurrentUsers--current-user"
+  >
+    bekah
+  </div>
+  <div
+    class="CurrentUsers--user"
+  >
+    friend
+  </div>
+</div>
+`;
+
+exports[`CurrentUsers renders warning text if there are no users 1`] = `
+<div
+  class="CurrentUsers"
+>
+  something went wrong, try again
+</div>
+`;
+
+exports[`CurrentUsers renders warning text if there is no current user 1`] = `
+<div
+  class="CurrentUsers"
+>
+  something went wrong, try again
+</div>
+`;
