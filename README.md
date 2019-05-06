@@ -27,18 +27,17 @@ When you get to the app enter your username and it will bring you to a new compo
 
 ## Tests
 - `npm run test` to test the client
-  - **note:** you will see four tests that are being skipped. They are in the EnterChat.test.js file and AddMessage.test.js file. They are all related to testing that the submit functionality is called when you hit the enter button, instead of having to click the button on the page. This requires using react-testing-library's `fireEvent.keyUp()` method. Unfortunately, it seems that this method is a bit buggy and I have found a lot of people including myself are not able to get this method to work with the tests. So for now I have left them skipped, this is something I would love to come back to
-  - I also did not yet get to test the axios calls and with socket.io code in Chat.js, using axios and socket.io slowed me down from finishing these tests, but again, something I would like to come back to
+  - **Note:** you will see four tests that are being skipped. They are in the EnterChat.test.js file and AddMessage.test.js file. They are all related to testing that the submit functionality is called when you hit the enter button, instead of having to click the button on the page. This requires using react-testing-library's `fireEvent.keyUp()` method. Unfortunately, it seems that this method is a bit buggy and I have found a lot of people including myself are not able to get this method to work with the tests. So for now I have left them skipped, this is something I would love to come back to
+  - I also did not yet get to test the axios calls and with socket.io code in Chat.js, using axios and socket.io slowed me down from finishing these tests, but again, something I would like to come back to. I would like to test all of the functions and calls.
 - Other notes: I had a harder time connecting the server tests and running those, so that is something I would like to get to next.
 
 ## Other notes
 **Things I would work on next if I had more time:**
 
-  - more thorough api and socket.io/axios tests, these were a bit harder to wrap my head around. I think with using socket.io for the first time, a pair on writing these tests would be ideal for me, if not just a good chunk of time reading and learning and practicing a bit more.
-  - add functionality for a little notification/message "x user has joined/left the chat" message when a user joins/leaves, I think it would add a nice touch
-  - a lot of css changes, the css was thrown together to just make something that resembled a message app. So there are a lot of little issues. ie. would like to implement sass, there is no accommodation for really long strings (message or user text), the scrollbar does not autoscroll to the bottom while messages are added, etc.
-  - make a few functions cleaner and bug proof. For example, in the store there is a dropUser function. This function works for my simple app, but in production there would be a lot more concerns. The first one I thought of is "what happens if two users have the same string for their name"? I would like to add test cases and functionality to really dig into anything I have missed in situations like these
-  - use TypeScript. We used TypeScript at my last job and I really enjoyed it. I think that is leads to cleaner, easier to read, code. It also helps with preventing bugs with typecasting.
-  - use a real database rather than an object I created as a store
-  - look into my components a bit more and change some of them to stateless components rather than pure components with the constructor
-  - explore webpack 
+  - More thorough api and socket.io/axios tests, these were a bit harder to wrap my head around. I think with using socket.io for the first time, a pair on writing these tests would be ideal for me, if not just a good chunk of time reading and learning and practicing a bit more. Same goes for mocking out axios calls for testing.
+  - Add functionality for a little notification/message "x user has joined/left the chat" message when a user joins/leaves, I think it would add a nice touch
+  - A lot of css changes, the css was thrown together to just make something that resembled a message app. So there are a lot of little issues. ie. would like to implement sass, there is no accommodation for really long strings (message or user text), the scrollbar does not autoscroll to the bottom while messages are added, etc.
+  - Make a few functions cleaner and bug proof. For example, in the store there is a dropUser function. This function works for my simple app, but in production there would be a lot more concerns. The first one I thought of is "what happens if two users have the same string for their name"? I would like to add test cases and functionality to really dig into anything I have missed in situations like these
+  - Use TypeScript. We used TypeScript at my last job and I really enjoyed it. I think that is leads to cleaner, easier to read, code. It also helps with preventing bugs with typecasting.
+  - Use a real database rather than an object I created as a store
+  - Look into my components a bit more and change some of them to stateless components rather than pure components with the constructor

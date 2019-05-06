@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Messages renders 1`] = `
+exports[`Messages renders no messages text when there are no messages 1`] = `
 <div
   class="Messages-container"
 >

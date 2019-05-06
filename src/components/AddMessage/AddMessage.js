@@ -1,16 +1,16 @@
 import React, { Component } from "react";
-import './AddMessage.css'
+import "./AddMessage.css";
 
 export class AddMessage extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      message: ''
+      message: ""
     };
   }
 
-  handleKeyUp = e => {
-    if (e.keyCode === 13) {
+  handleKeyUp = ev => {
+    if (ev.keyCode === 13) {
       this.handleClick();
     }
   };
@@ -18,7 +18,7 @@ export class AddMessage extends Component {
   handleClick = () => {
     if (this.state.message) {
       this.props.sendMessage(this.state.message);
-      this.setState({ message: ''});
+      this.setState({ message: "" });
     }
   };
 
@@ -37,7 +37,7 @@ export class AddMessage extends Component {
           onKeyUp={this.handleKeyUp}
         />
         <button
-        data-testid="add-message-button"
+          data-testid="add-message-button"
           onClick={this.handleClick}
           className="AddMessage--btn"
         >

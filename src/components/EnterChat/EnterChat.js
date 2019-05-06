@@ -15,8 +15,8 @@ export class EnterChat extends Component {
     }
   };
 
-  handleKeyUp = e => {
-    if (e.keyCode === 13) {
+  handleKeyUp = ev => {
+    if (ev.keyCode === 13) {
       this.handleClick();
     }
   };
@@ -35,7 +35,7 @@ export class EnterChat extends Component {
             type="text"
             placeholder="Enter name here"
             value={user}
-            onChange={event => this.setState({ user: event.target.value })}
+            onChange={ev => this.setState({ user: ev.target.value })}
             onKeyUp={this.handleKeyUp}
           />
           <button
